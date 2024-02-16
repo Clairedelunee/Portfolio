@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Ajoute la classe à l'élément texte
         monElement.classList.add("portfolioactif");
+        console.log("test")
     }
 });
 
