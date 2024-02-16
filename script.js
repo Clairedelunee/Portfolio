@@ -20,3 +20,5 @@ document.addEventListener("DOMContentLoaded", function() {
         monElement.classList.add("contactactive");
     }
 });
+
+console.log("prout")
