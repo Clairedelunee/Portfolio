@@ -49,10 +49,10 @@ nav {
 }
 
 .portfolioactif {
-    color: #1C1C1C;
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
+    color: #1C1C1C !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
 }
 
 .contactactive {
