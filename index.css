@@ -1,0 +1,58 @@
+.btn-primary {
+    background-color: #6F1D1B;
+    border-color: #6F1D1B;
+}
+
+.btn-primary:hover {
+    background-color: #6F1D1B;
+    border-color: #6F1D1B;
+    margin-right: 20px;
+}
+
+.m-1 {
+    margin-right: 20px;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.line {
+    background-color: #6F1D1B;
+    width: 120%;
+    height: 2px;
+    margin-bottom: -13px;
+}
+
+.deco-verti-haut {
+    margin-bottom: 30%;
+    background-color: #6F1D1B;
+    height: 2px;
+}
+
+.deco-hori-g-dash {
+
+    border-left: 3px solid #6F1D1B;
+    padding-top: 780px;
+}
+
+.photo {
+    margin-top: 200px;
+}
+
+header{
+    font-family: 'Roboto Flex', sans-serif;
+}
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
