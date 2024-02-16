@@ -9,12 +9,52 @@
 h1,
 h2,
 h3,
-.p1,
-.p2,
+p,
 .btn,
-a,
-#btn1,
-#btn2,
-#btn3 {
+a {
   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #6F1D1B;
+  font-weight: 600;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+h2{
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: none;
+}
+p{
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: none;
+}
+
+.portfolioactif {
+  color: #1C1C1C ;
+  font-style: normal ;
+  font-weight: 700 ;
+  text-transform: uppercase ;
+}
+
+.contactactive {
+  color: #1C1C1C;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
 }
