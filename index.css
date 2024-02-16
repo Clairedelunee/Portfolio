@@ -1,58 +1,63 @@
-.btn-primary {
-    background-color: #6F1D1B;
-    border-color: #6F1D1B;
+h1 {
+    color: #6F1D1B;
+    font-weight: 600;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+ 
 }
-
-.btn-primary:hover {
-    background-color: #6F1D1B;
-    border-color: #6F1D1B;
-    margin-right: 20px;
+.name{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 30%;
 }
-
-.m-1 {
-    margin-right: 20px;
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 nav {
-    width: 100%;
+    
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.navbar {
-    width: 100%;
+.navelement {
+    padding-right: 20px;
 }
 
-.container {
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 5px;
+.headercontent {
+    text-transform: uppercase;
+    text-align: left;
+
 }
 
-.line {
-    background-color: #6F1D1B;
-    width: 120%;
-    height: 2px;
-    margin-bottom: -13px;
+.headerandtitle{
+    align-items: center;
+    height: 120px;
+    padding-bottom: 0px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0px;
+    position: relative;
+    display: flex;
 }
 
-.deco-verti-haut {
-    margin-bottom: 30%;
-    background-color: #6F1D1B;
-    height: 2px;
+.portfolioactif {
+    color: #1C1C1C;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.deco-hori-g-dash {
-
-    border-left: 3px solid #6F1D1B;
-    padding-top: 780px;
-}
-
-.photo {
-    margin-top: 200px;
-}
-
-header{
-    font-family: 'Roboto Flex', sans-serif;
-}
-body{
-    font-family: 'Roboto Flex', sans-serif;
+.contactactive {
+    color: #1C1C1C;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
 }
