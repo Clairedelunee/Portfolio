@@ -1,24 +1,21 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+function ajouterClasseSiSurPage(elementId, pagePartielle, classe) {
     // Vérifie si l'utilisateur est sur la page spécifique
-    if (window.location.href.indexOf("index.html") > -1) {
-        // Récupère l'élément texte par son ID
-        var monElement = document.getElementById("indexpage");
+    if (window.location.href.indexOf(pagePartielle) > -1) {
+        // Récupère l'élément par son ID
+        var element = document.getElementById(elementId);
 
-        // Ajoute la classe à l'élément texte
-        monElement.classList.add("portfolioactif");
-        console.log("test")
+        // Ajoute la classe à l'élément
+        if (element) {
+            element.classList.add(classe);
+        }
     }
-});
+}
+
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Vérifie si l'utilisateur est sur la page spécifique
-    if (window.location.href.indexOf("contact.html") > -1) {
-        // Récupère l'élément texte par son ID
-        var monElement = document.getElementById("pagecontact");
-
-        // Ajoute la classe à l'élément texte
-        monElement.classList.add("contactactive");
-    }
+    // Utilisation de la fonction pour ajouter la classe sur différentes pages
+    ajouterClasseSiSurPage("indexpage", "index.html", "portfolioactif");
+    ajouterClasseSiSurPage("pagecontact", "contact.html", "contactactive");
+    // Ajoutez autant d'appels que nécessaire pour les différentes pages
 });
-
-console.log("prout")
