@@ -157,3 +157,27 @@ nav {
     justify-content: center;
 }
 
+.link{
+    color:#6F1D1B !important ;
+    text-decoration:underline !important  ;
+    text-align: center;
+}
+
+.photo-illustration{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Ratio 16:9 pour une vidéo responsive */
+    margin: 0 auto; /* Centrer la vidéo */
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
