@@ -173,6 +173,7 @@ nav {
     overflow: hidden;
     padding-bottom: 56.25%; /* Ratio 16:9 pour une vidéo responsive */
     margin: 0 auto; /* Centrer la vidéo */
+    margin-bottom: 5%;
   }
   .video-container iframe {
     position: absolute;
