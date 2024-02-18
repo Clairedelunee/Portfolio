@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Font-->
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclure le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2>Site internet Ricochet</h2>
+    <div class="textpresentation">
+        <p style="margin-bottom: 10%;">Dans le cadre de mon stage de première année, j'ai été amené à
+            réaliser une refont d'un site web de l'association dans laquelle j'effectuais mon stage. J'y ai ainsi découvert Wordpress.
+           <br> Voir le site : <a class="link" href="https://staging.ricochetasso.fr">https://staging.ricochetasso.fr</a>
+        </p>
+    </div>
+    <div class="photo-illustration">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/ricochet/img1.webp" alt="Image extraite du Site internet">
+    </div>
+</body>
+</html>
+
+    
