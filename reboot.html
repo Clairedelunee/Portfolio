@@ -1,0 +1,56 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Font-->
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclure le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2>Reboot!</h2>
+    <div class="textpresentation">
+        <p style="margin-bottom: 10%;">Pendant deux années de suite j'ai eu l'honneur de faire partie de l'équipe
+            technique du hackation reboot!.
+            Nos missions était d'accueillir et gérer les speakers, Gérer le stream en direct, afficher les bonnes
+            informations pour chaque conférence et modérer le tchat twitch en direct.
+            <br> Lien vers le site officiel :
+            <br> <a class="link" href="https://www.rebootcommunication.org"> https://www.rebootcommunication.org</a>
+        </p>
+
+    </div>
+    <div class="photo-illustration">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/reboot/J1 - Conf 1.webp"
+            alt="Image du lancement de l'édition 2023">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/reboot/10h00-11h15.webp"
+            alt="Image d'information de la prochaine conférence">
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <img style="width: 48%; height: auto; margin: 1%; " src="Image/reboot/C'est la pause (11h30).webp"
+            alt="Image de pause">
+    </div>
+
+
+
+</body>
+
+</html>
