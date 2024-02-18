@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Conteneur de la galerie avec un affichage en grille */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px; /* Espacement entre les images */
+      max-width: 1000px; /* Limiter la largeur de la galerie */
+      margin: 20px auto; /* Centrer la galerie sur la page */
+    }
+
+    /* Styles pour chaque image dans la galerie */
+    .gallery img {
+      width: 100%; /* Les images occupent la largeur totale du conteneur */
+      height: auto; /* La hauteur s'ajuste automatiquement pour maintenir les proportions */
+      border-radius: 8px; /* Coins arrondis pour un aspect esthétique (optionnel) */
+    
+    }
+  </style>
+  <title>Galerie de Photos</title>
+</head>
+<body>
+
+  <div class="gallery">
+    <!-- Image 1 -->
+    <img src="Image/photographie/img1.jpg" alt="Description de l'image 1">
+
+    <!-- Image 2 -->
+    <img src="Image/photographie/img2.jpg" alt="Description de l'image 2">
+
+    <!-- Image 3 -->
+    <img src="Image/photographie/img3.jpg" alt="Description de l'image 3">
+
+    <!-- Image 4 -->
+    <img src="Image/photographie/img4.jpg" alt="Description de l'image 4">
+
+    <!-- ... Ajoutez d'autres images selon le même modèle ... -->
+  </div>
+
+</body>
+</html>
