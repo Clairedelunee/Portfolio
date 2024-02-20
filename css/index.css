@@ -1,6 +1,6 @@
 .name {
     max-width: 100%;
-    margin-left: 11.5%;
+    margin-left: 12%;
     margin-right: auto;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -253,6 +253,3 @@ nav {
     font-weight: 600;
 }
 
-.test{
-    display: flex;
-justify-content: center;}
