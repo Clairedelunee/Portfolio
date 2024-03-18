@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Font-->
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclure le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+
+    <h2>Stratégie de communication</h2>
+    <div class="textpresentation">
+        <p> 
+           Durant ma deuxième année, un projet de 3 semaines nous à été annoncé : un projet de stratégie de communication ! Ce fut une première pour nous et j'ai énormément appris durant ce projet. les livrabres étaient : 
+        </p>
+         <p style="text-align: start;">  <br> - Une recommandation stratégique comprenant analyse du marché,
+objectifs, étude de la cible, constats, insight(s), problématique, concept
+stratégique, concept et propositions créatives, stratégie des moyens.
+<br>- Créer un site vitrine, incluant une solution de e-commerce
+<br>Repenser l’identité visuelle de la marque et donner une direction
+artistique cohérente à l’ensemble site-RS-produits : le logo et les
+designs peuvent être modifiés, mais pas le nom.
+- Produire le volet créatif de la campagne.
+    </p>
+    <p style="margin-top: 5px;">Vous retrouvez sur le lien ci-dessous tout notre travail.
+       <br> <a class="link" target="_blank" href="https://drive.google.com/file/d/1PSS9UYpYc1hBSoevaK_RDRCUokVZdZCW/view?usp=sharing">Lien google drive</a>
+
+    </p>
+
+
+
+
+</body>
+</html>
