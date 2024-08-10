@@ -1,0 +1,118 @@
+/* Avant animation d'image */
+.content {
+    overflow: hidden;
+    opacity: 0; /* Start content hidden */
+    transform: scale(0.95); /* Slightly shrink the content */
+    animation: fadeIn 2s ease forwards; /* Fade-in animation */
+} 
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Delay each projet for staggered effect */
+.content:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.content:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.content:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.content:nth-child(4) {
+    animation-delay: 1.1s;
+}
+
+.content:nth-child(n+5) {
+    animation-delay: 1.3s;
+}
+
+.gallery {
+    overflow: hidden;
+    opacity: 0; /* Start content hidden */
+    transform: scale(0.95); /* Slightly shrink the content */
+    animation: fadeIn 2s ease forwards; /* Fade-in animation */
+} 
+/* Delay each projet for staggered effect */
+.gallery:nth-child(1) {
+    animation-delay: 4.5s;
+}
+
+.gallery:nth-child(2) {
+    animation-delay: 4.7s;
+}
+
+/* Animation Images  projet*/
+.photo-illustration img {
+    opacity: 0;
+    /* Start images hidden */
+    transform: scale(0.95);
+    /* Slightly shrink the image */
+    animation: fadeIn 2s ease forwards;
+    /* Fade-in animation */
+}
+
+
+/* Delay each image for staggered effect */
+.photo-illustration img:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.photo-illustration img:nth-child(2) {
+    animation-delay: 1s;
+    /* Delayed by 1 seconds */
+}
+
+.photo-illustration img:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.photo-illustration img:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.photo-illustration img:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+.photo-illustration img:nth-child(6) {
+    animation-delay: 3s;
+}
+
+.photo-illustration img:nth-child(7) {
+    animation-delay: 3.5s;
+}
+
+.photo-illustration img:nth-child(8) {
+    animation-delay: 4s;
+}
+
+.photo-illustration img:nth-child(9) {
+    animation-delay: 4.5s;
+}
+
+.photo-illustration img:nth-child(10) {
+    animation-delay: 5s;
+}
+
+.photo-illustration img:nth-child(11) {
+    animation-delay: 5.5s;
+}
+
+.photo-illustration img:nth-child(12) {
+    animation-delay: 6s;
+}
+

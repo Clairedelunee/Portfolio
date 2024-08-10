@@ -1,9 +1,3 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-html {
-  height: 100%;
-}
 
 .name-anim {
   position: relative;
@@ -18,7 +12,7 @@ html {
   background-color:#6F1D1B;
   transform-origin: center center;
   transform: scaleX(0);
-  animation: line-animation 3s ease;
+  animation: line-animation 3s ease ;
 }
 
 p#page-name {
@@ -29,22 +23,22 @@ p#page-name {
   0%, 25% { 
     transform: scaleX(0); 
     top: 0;
-    margin: 10px; 
+    margin-top: 10px; 
   }
  25% { 
     transform: scaleX(1); 
     top: 0; 
-    margin: 10px;
+    margin-top: 10px; 
   }
   50% { 
     transform: scaleX(1); 
     top: calc(100% - 2px); 
-    margin: 10px;
+    margin-top: 10px; 
   }
   100% { 
     transform: scaleX(0); 
     top: calc(100% - 2px); 
-    margin: 10px;
+    margin-top: 10px; 
   
   }
 }

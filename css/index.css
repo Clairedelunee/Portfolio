@@ -1,3 +1,7 @@
+  body {
+      overflow-x: unset;
+  }
+
   /* Paramètre du nom du site au millieu de la barre de navigation */
   .name {
       max-width: 100%;
@@ -25,6 +29,33 @@
   .navelement {
       margin-right: 20px;
   }
+
+  .nav-link {
+      display: inline-block;
+      position: relative;
+  }
+
+  .nav-link::before {
+      transition: 300ms;
+      height: 2px;
+      content: "";
+      position: absolute;
+      background-color: #6F1D1B;
+  }
+
+  .nav-link-ltr::before {
+      width: 0%;
+      bottom: -1px;
+  }
+
+  .nav-link-ltr:hover::before {
+      width: 100%;
+  }
+
+
+
+
+
 
   /* Paramètre des textes des menus de la barre de navigation */
   .headercontent {
@@ -108,6 +139,7 @@
       }
   }
 
+  /* Groupe de tous les projets sur la page index*/
   .groupcontent {
       display: flex;
       flex-wrap: wrap;
@@ -129,8 +161,6 @@
 
   }
 
-
-
   .content {
       position: relative;
       margin-top: 8%;
@@ -139,8 +169,13 @@
       margin-left: 2%;
       margin-right: 2%;
       max-height: 600px;
-
+      transition: filter 0.2s ease;
   }
+
+  /* Ajouter un effet flou au survol*/
+.content:hover img {
+    filter: blur(2px);
+}
 
   /* Affichage gallery de la page index */
   .galleryindex {
@@ -225,6 +260,7 @@
       flex-wrap: wrap;
   }
 
+
   /* Paramètre de l'affichage des vidéo dans les pages projets */
   .video-container {
       position: relative;
@@ -245,7 +281,7 @@
   }
 
 
-
+ /* Paramètre des deux derniers éléments de la page index */
   .gallery {
       display: grid;
       align-items: center;
@@ -254,7 +290,7 @@
       max-width: 1000px;
       margin: 20px auto;
   }
-
+ 
   .gallery img {
       width: 100%;
       border: 2px solid #6F1D1B;
