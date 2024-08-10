@@ -1,0 +1,62 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+
+  margin: auto;
+
+}
+h2{
+  text-transform: uppercase;
+  color: #222;
+  font-weight:200;
+  color: transparent;
+  font-size: 0px;
+}
+h2 span {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-size: clamp(20px, 8vw, 28px);
+}
+h2 span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+h2:nth-child(1) {
+  font-weight: 300;
+  animation: txt-appearance 0s 0.20s forwards;
+}
+h2:nth-child(2) {
+  animation: txt-appearance 0s 0.20s forwards;
+}
+h2:nth-child(1) span::after {
+  background: #6F1D1B;
+  animation: slide-in 0.20s ease-out forwards,
+  slide-out 0.80s 0.20s ease-out forwards;
+}
+
+@keyframes slide-in {
+  100% {
+      transform: translateX(0%);
+  }
+}
+@keyframes slide-out {
+  100% {
+      transform: translateX(100%)
+  }
+}
+@keyframes txt-appearance {
+  100% {
+      color: #222;
+  }
+}
