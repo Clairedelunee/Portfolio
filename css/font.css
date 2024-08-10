@@ -1,3 +1,4 @@
+/* Paramètres de la police d'écriture choisi*/
 h1,
 h2,
 h3,
@@ -8,6 +9,7 @@ a,
   font-family: 'Roboto', sans-serif;
 }
 
+/* Paramètres des titres 1*/
 h1 {
   color: #6F1D1B;
   font-weight: 600;
@@ -18,6 +20,7 @@ h1 {
 
 }
 
+/* Paramètres des titres 2*/
 h2 {
   font-size: 35px;
   font-style: normal;
@@ -29,6 +32,7 @@ h2 {
   text-transform: none;
 }
 
+/* Paramètres des textes*/
 p {
   font-size: 19px;
   font-style: normal;
@@ -40,11 +44,14 @@ p {
   text-transform: none;
 }
 
+/* Paramètres des sous-titres de la gallery dans index */
 .sthover {
   text-transform: uppercase;
   font-weight: bold;
 }
 
+
+/* Met en gras le texte dans la barre du menu de la page qui correspond à celle où se trouve l'utilisateur*/
 .portfolioactif {
   color: #1C1C1C;
   font-style: normal;
@@ -52,6 +59,7 @@ p {
   text-transform: uppercase;
 }
 
+/* Met en gras l'autre texte dans la barre du menu de la page qui correspond à celle où se trouve l'utilisateur*/
 .contactactive {
   color: #1C1C1C;
   font-style: normal;
