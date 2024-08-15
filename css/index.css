@@ -1,6 +1,8 @@
   body {
       overflow-x: unset;
+
   }
+
 
   /* Paramètre du nom du site au millieu de la barre de navigation */
   .name {
@@ -173,9 +175,9 @@
   }
 
   /* Ajouter un effet flou au survol*/
-.content:hover img {
-    filter: blur(2px);
-}
+  .content:hover img {
+      filter: blur(2px);
+  }
 
   /* Affichage gallery de la page index */
   .galleryindex {
@@ -281,7 +283,7 @@
   }
 
 
- /* Paramètre des deux derniers éléments de la page index */
+  /* Paramètre des deux derniers éléments de la page index */
   .gallery {
       display: grid;
       align-items: center;
@@ -290,7 +292,7 @@
       max-width: 1000px;
       margin: 20px auto;
   }
- 
+
   .gallery img {
       width: 100%;
       border: 2px solid #6F1D1B;
