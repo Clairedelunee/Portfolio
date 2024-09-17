@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclu le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2>Stage Michard Ardillier</h2>
+
+    <div class="textpresentation">
+        <div class="name-anim">
+            <p id="page-name" style=" margin-top: 10%; margin-bottom: 10%;">
+                Durant 4 mois j'ai eu l'honneur d'être stagiaire en communication pour l'entreprise bordelaise Michard Ardillier. Ce fut un réel plaisir de travailler au sein de cette entreprise chargé d'histoire.
+                Mes missions pricipales était de créé du contenu pour les réseaux sociaux, gérer le site internet, écrire les newsletters, et le rapport de bug à l'agence qui gère le site internet.
+                J'ai beaucoup appris durant ce stage qui m'a été bénéfique.
+                J'ai aussi eu l'honneur de recevoir une lettre de recommandation à la fin de mon stage.
+            </p>
+        </div>
+        <!--Insertion de la vidéo youtube-->
+        <div class="video-container">
+            <!-- Insérez le code d'intégration ici -->
+            <iframe width="560" height="315" src="LIEN DE LA VIDéO" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+
+    </div>
+    <div class="photo-illustration">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+
+
+    </div>
+
+
+</body>
+
+</html>

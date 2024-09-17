@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclu le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2>Projet d'intégration</h2>
+
+    <div class="textpresentation">
+        <div class="name-anim">
+            <p id="page-name" style=" margin-top: 10%; margin-bottom: 10%;">
+                Comme chaque rentrée, ma formation organise un projet d'intégration pour les 3 promotions. L’idée de
+                cette année était de participer à une carte intéractive que nous avons nommée : « Bordeomap’ ! ».
+                Le but de cette carte était de mettre en lumière les munuments et l'histoire de bordeaux.
+                <br>
+                Notre groupe s'est concentré sur les monuments disparu et/ou modifier par le temps. Nous avons nommés
+                cela "Les trésors cachés"
+                <br>
+                Pour ce faire on va vous raconter l’histoire de Doris, une étudiante passionnée par l’aventure, qui
+                c’est rendu dans une boutique d’antiquités. Elle tombe nez à nez avec un magnifique vase assez
+                mystérieux… Attirée par celui-ci, elle décide de l’acheter. En l’exposant chez elle, elle le fait tomber
+                ce qui fait apparaître une carte au trésors. Elle remarque la carte de Bordeaux comprenant plusieurs
+                croix. C’est alors sans aucuns doute, qu’elle décide de partir explorer la ville de Bordeaux pour y
+                découvrir toute son histoire.
+            </p>
+        </div>
+
+
+
+
+
+
+        <!--Insertion de la vidéo youtube-->
+        <div class="video-container">
+            <!-- Insérez le code d'intégration ici -->
+            <iframe width="560" height="315" src="LIEN DE LA VIDéO" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+
+    </div>
+    <div class="photo-illustration" style="justify-content: center;">
+        <img style="width: 50%; height: auto; margin: 1%;" src="Image/Inté3a/carte.JPEG"
+            alt="Carte de bordeaux avec des croix dessus">
+    </div>
+    <div class="photo-illustration">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/Inté3a/Article.png"
+            alt="Article sur la dernière éxécution publique à Bordeaux.">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+
+
+    </div>
+
+
+</body>
+
+</html>
