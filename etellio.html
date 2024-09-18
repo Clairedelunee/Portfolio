@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclu le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2>Etellio</h2>
+
+    <div class="textpresentation">
+        <div class="name-anim">
+            <p id="page-name" style=" margin-top: 10%; margin-bottom: 10%;">
+                Etellio naît d’une volonté d’accompagner les personnes intéressées par l’IVG, dans les méandres d’un
+                parcours de soin parfois bien compliqué.
+                <br><span class="highlight">Oser parler, récits d'IVG </span> le podcast de témoignages de femmes ayant
+                vécu une Interruption Volontaire de Grossesse.
+                <br>L’avortement, c’est avant tout des femmes. Des femmes avec des parcours, des expériences et des
+                histoires uniques et propres à chacune. Les choix et le parcours menant à l’IVG ne sont pas linéaires et
+                diffèrent d’une personne à une autre. Avorter n’est pas une honte, mais un droit. Tu n’es pas seule.
+                <br> Retrouvez notre travail sur <a class="link" target="_blank"
+                    href="https://etellio.mmibordeaux.com/">
+                    notre site internet</a>
+            </p>
+        </div>
+
+    </div>
+    <div class="photo-illustration">
+        <img style="width: 50%; height: auto; margin: 1%;" src="Image/etellio/image.png"
+            alt="photo-illustration">
+        <img style="width: 45%; height: auto;margin: 1% 1% 1% 0%;" src="Image/etellio/spotify.png"
+            alt="photo-illustration">
+    
+    </div>
+
+
+</body>
+
+</html>

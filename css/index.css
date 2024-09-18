@@ -14,6 +14,14 @@
 
   }
 
+/* Paramètre du bouton dans contact */
+.btn-cv{
+    background-color: #6F1D1B;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+}
+
   /* Paramètre des liens dans la barre de navigation */
   a {
       color: black;
