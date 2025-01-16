@@ -1,42 +1,58 @@
   body {
       overflow-x: unset;
+/* Mode clair par défaut */
+    background-color: white;
+    color: black;
+}
 
+/* Mode sombre activé */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+  /* Change les couleurs si mode sombre */
+  @media (prefers-color-scheme: dark) {
+      body {
+          background-color: black;
+          color: white;
+      }
   }
 
   /* Style de base du dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
 
-/* Style du contenu du menu déroulant */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    margin-top: 5px;
-}
+  /* Style du contenu du menu déroulant */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      margin-top: 1px;
+  }
 
-/* Liens à l'intérieur du menu */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+  /* Liens à l'intérieur du menu */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
 
-/* Affichage du menu au survol */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+  /* Affichage du menu au survol */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
 
-/* Effet au survol des liens */
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
+  /* Effet au survol des liens */
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+  }
 
   /* Paramètre du nom du site au millieu de la barre de navigation */
   .name {
@@ -48,13 +64,13 @@
 
   }
 
-/* Paramètre du bouton dans contact */
-.btn-cv{
-    background-color: #6F1D1B;
-    border-radius: 20px;
-    border: none;
-    padding: 15px;
-}
+  /* Paramètre du bouton dans contact */
+  .btn-cv {
+      background-color: #6F1D1B;
+      border-radius: 20px;
+      border: none;
+      padding: 15px;
+  }
 
   /* Paramètre des liens dans la barre de navigation */
   a {
