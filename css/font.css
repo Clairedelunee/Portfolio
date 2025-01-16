@@ -20,6 +20,12 @@ h1 {
 
 }
 
+/* Mode sombre : changer la couleur de l'animation */
+body.dark-mode h1{
+  color:  #D85A4D;  /* Couleur en mode sombre */
+}
+
+
 /* Paramètres des titres 2*/
 h2 {
   font-size: 35px;
@@ -66,4 +72,82 @@ p {
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
+}
+/* Par défaut (mode clair) */
+body {
+  color: black;  /* Texte en noir par défaut */
+  background-color: white;  /* Fond blanc */
+}
+
+/* Mode sombre (si la classe dark-mode est appliquée au body) */
+body.dark-mode {
+  color: white;  /* Texte en blanc en mode sombre */
+  background-color: black;  /* Fond noir */
+}
+
+/* Spécifique pour h2, h3, p, .btn */
+h2, h3, p, .btn {
+  color: black;  /* Texte en noir dans le mode clair */
+}
+
+/* Mode sombre */
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode p, 
+body.dark-mode .btn {
+  color: white !important;  /* Texte en blanc en mode sombre (avec !important pour forcer la priorité) */
+}
+
+/* Bouton : Style par défaut (mode clair) */
+.btn {
+  background-color: lightgray;  /* Bouton clair */
+  color: black;
+  border: 1px solid gray;      /* Bordure du bouton */
+}
+
+/* Mode sombre : style du bouton */
+body.dark-mode .btn {
+  background-color: gray;      /* Bouton sombre */
+  color: white;
+  border: 1px solid white;     /* Bordure du bouton */
+}
+
+/* Lien : Style par défaut (mode clair) */
+a {
+  color: #6F1D1B;  /* Couleur des liens en mode clair */
+  text-decoration: none;
+}
+
+/* Mode sombre : style du lien */
+body.dark-mode a {
+  color: #D85A4D;  /* Couleur des liens en mode sombre */
+}
+
+/* Spécifique aux titres (h2, h3) */
+h2, h3 {
+  font-size: 2em;  /* Ajuste la taille selon ton design */
+  font-weight: bold;
+}
+
+/* Mode sombre : style des titres h2, h3 */
+body.dark-mode h2, 
+body.dark-mode h3 {
+  color: white !important;  /* Couleur blanche pour les titres en mode sombre (avec !important) */
+}
+
+/* Menu déroulant : couleur de fond (mode clair) */
+.dropdown-content {
+  background-color: white;  /* Fond blanc en mode clair */
+  color: black;  /* Texte noir */
+}
+
+/* Mode sombre : couleur de fond du menu déroulant */
+body.dark-mode .dropdown-content {
+  background-color: white;  /* Fond blanc en mode sombre */
+  color: black;  /* Texte noir */
+}
+
+/* Transition douce pour un changement fluide */
+h2, h3, p, .btn, a, .dropdown-content {
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
 }

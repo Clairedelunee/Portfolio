@@ -39,6 +39,7 @@
     <meta name="apple-mobile-web-app-title" content="Portfolio Vital Claire" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
@@ -52,37 +53,14 @@
 
     <title>Portfolio Vital Claire</title>
 </head>
-<header>
-    <nav>
-        <div class="headerandtitle">
-            <div class="headercontent">
-                <div class="dropdown">
-                    <a class="navelement portfolioactif nav-link nav-link-ltr" href="index.html">Portfolio</a>
-                    <div class="dropdown-content">
-                        <a href="index-Com.html">Projets de communication</a>
-                        <a href="index-Crea.html">Projets de créations visuelles</a>
-                        <a href="index-Dev.html">Projets de développement</a>
-                    </div>
-                </div>
-
-                <div>
-                    <a class="navelement nav-link nav-link-ltr" href="contact.html" id="pagecontact">CV & contact</a>
-                </div>
-                <div><button id="toggle-theme">Changer de mode</button></div>
-            </div>
-
-            <div class="name">
-                <h1>Claire Vital</h1>
-            </div>
-        </div>
-    </nav>
-</header>
 
 
 
 
 
 <body>
+    <!-- Conteneur du header (chargé dynamiquement) -->
+    <div id="header-container"></div>
 
     <div class="container">
         <h2>
@@ -93,7 +71,7 @@
     </div>
 
     </div>
-    <h2>Bienvenue sur mon portfolio</h2>
+
     <div class="textpresentation name-anim">
         <p id="page-name">Actuellement en troisième année de B.U.T Métiers du Multimédia et de l'Internet, je bénéficie
             d'une expérience
@@ -156,7 +134,8 @@
     <p><a href="mention.html"
             style="display: flex; justify-content: end; margin: 5%;text-decoration: underline;">Mentions Légales</a></p>
 
-            <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 

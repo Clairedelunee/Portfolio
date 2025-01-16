@@ -1,15 +1,6 @@
   body {
       overflow-x: unset;
-/* Mode clair par défaut */
-    background-color: white;
-    color: black;
-}
-
-/* Mode sombre activé */
-.dark-mode {
-    background-color: black;
-    color: white;
-}
+  }
 
   /* Change les couleurs si mode sombre */
   @media (prefers-color-scheme: dark) {
@@ -18,6 +9,24 @@
           color: white;
       }
   }
+
+ /* Style du bouton de changement de mode en mode clair */
+#toggle-theme {
+    background-color: #6F1D1B;  /* Fond rouge foncé en mode clair */
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;  /* Curseur en forme de main */
+    font-size: 16px; 
+    transition: background-color 0.3s, color 0.3s;  /* Transition douce */
+    border-radius: 5px;
+}
+
+/* Mode sombre : changement de couleur du bouton */
+body.dark-mode #toggle-theme {
+    background-color: #D85A4D;  /* Fond rouge plus clair en mode sombre */
+    color: white;  /* Texte en blanc */
+}
 
   /* Style de base du dropdown */
   .dropdown {
@@ -104,6 +113,15 @@
       background-color: #6F1D1B;
   }
 
+
+  /* Mode sombre : changer la couleur de l'animation */
+body.dark-mode .nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #D85A4D;
+}
   .nav-link-ltr::before {
       width: 0%;
       bottom: -1px;

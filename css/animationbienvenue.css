@@ -44,6 +44,11 @@ h2:nth-child(1) span::after {
   animation: slide-in 0.20s ease-out forwards,
   slide-out 0.80s 0.20s ease-out forwards;
 }
+/* Mode sombre : changer la couleur de l'animation */
+body.dark-mode h2:nth-child(1) span::after {
+  background: #D85A4D;  /* Couleur en mode sombre */
+}
+
 
 @keyframes slide-in {
   100% {
