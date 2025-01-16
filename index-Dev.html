@@ -52,97 +52,114 @@
 
     <title>Portfolio Vital Claire</title>
 </head>
-<header>
-    <nav>
-        <div class="headerandtitle">
-            <div class="headercontent">
-                <div> <a class="navelement portfolioactif  nav-link nav-link-ltr " href="index.html"> Portfolio</a>
-                </div>
 
-                <div> <a class="navelement nav-link nav-link-ltr" href="contact.html" id="pagecontact"> CV & contact</a>
-                </div>
-            </div>
-
-            <div class="name ">
-                <h1>Claire Vital</h1>
-            </div>
-
-        </div>
-    </nav>
-</header>
 
 
 
 
 <body>
 
-    <div class="container">
-        <h2>
-            <span>
-                Bienvenue sur mon portfolio
-            </span>
-        </h2>
-    </div>
+    <!-- Inclu le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
 
-    </div>
-    <h2>Bienvenue sur mon portfolio</h2>
+    <!-- Reste du contenu de la page -->
+    <h2 style="color: black;">Projets de développement</h2>
+
     <div class="textpresentation name-anim">
-        <p id="page-name">Actuellement en troisième année de B.U.T Métiers du Multimédia et de l'Internet, je bénéficie
-            d'une expérience
-            acquise durant la réalisation de divers projets tout au long de l'année. Dotée d'une grande créativité, je
-            sais me montrer proactive et digne de confiance dans la réalisation de mes missions. Vous retrouverez ici
-            certains projets que j'ai pu réaliser au cours de ma formation ou durant mon temps libre.</p>
+        <p id="page-name">Au cours de mes trois années d'études, j'ai eu l'occasion de travailler sur plusieurs projets
+            de développement, également bien dans le domaine du jeu vidéo que du web. Ces expériences m'ont permis
+            d'acquérir des compétences en programmation, en conception d'interfaces et en gestion de projet technique.
+        </p>
     </div>
 
     <!--Gallery de projet-->
     <div class="groupcontent">
 
         <!--Chaque projet se trouve dans une div de class "content"-->
+
         <div class="content">
-            <img src="Image/CouvCom.png" alt="Image de couverture des projets de communication">
+            <img src="Image/easynscel/easynscel.webp" alt="Image de couverture du projet Easy N Scel">
             <div class="overlay">
-                <a class="sthover" href="index-Com.html">
+                <a class="sthover" href="easynscel.html">
 
                     <div class="ProjectNameAndDate">
-                        <div>Projets de</div>
-                        <div> communication</div>
+                        <div>Easy N Scel</div>
+                        <div>2024</div>
                     </div>
                 </a>
             </div>
         </div>
 
         <div class="content">
-            <img src="Image/CouvCrea.png" alt="Image de couverture des projets de créations visuelle">
+            <img src="Image/ricochet/imgcouv.webp" alt="Image de couverture du projet Site internet Wordpress">
             <div class="overlay">
-                <a class="sthover" href="index-Crea.html">
-
+                <a class="sthover" href="sitericochet.html">
                     <div class="ProjectNameAndDate">
-                        <div>Projets de</div>
-                        <div>création visuelle</div>
+                        <div>refonte d'un site</div>
+                        <div> sous Wordpress</div>
+                        <div>2023</div>
                     </div>
                 </a>
             </div>
         </div>
 
         <div class="content">
-            <img src="Image/CouvDev.png" alt="Image de couverture des projets de développement">
+            <img src="Image/blogart/blogartcouv.webp" alt="Image de couverture du projet Blog'art">
             <div class="overlay">
-                <a class="sthover" href="index-Dev.html">
-
+                <a class="sthover" href="blogart.html">
                     <div class="ProjectNameAndDate">
-                        <div>Projets de</div>
-                        <div>développement</div>
+                        <div>blog'art</div>
+                        <div>2023</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/handiplay/handicouv.webp" alt="Image de couverture du projet Handiplay">
+            <div class="overlay">
+                <a class="sthover" href="handiplay.html">
+                    <div class="ProjectNameAndDate">
+                        <div>handiplay</div>
+                        <div>2023</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/rubyonrails/rubycouv.webp" alt="Image de couverture du projet Ruby on rails">
+            <div class="overlay">
+                <a class="sthover" href="rubyonrails.html">
+                    <div class="ProjectNameAndDate">
+                        <div>ruby on rails</div>
+                        <div>2023</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/refontmusee/muscouv.webp" alt="Image de couverture du projet Refont d'un site">
+            <div class="overlay">
+                <a class="sthover" href="refontmusee.html">
+                    <div class="ProjectNameAndDate">
+                        <div>Refonte d'un site</div>
+                        <div>2022</div>
                     </div>
                 </a>
             </div>
         </div>
 
     </div>
-
-
-
-
-
     <!--Lien vers les Mentions légales du site-->
 
     <p><a href="mention.html"

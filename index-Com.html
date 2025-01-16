@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head prefix="og: http://ogp.me/ns#">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta name="robots" content="all">
+    <meta name="target" content="all">
+
+    <meta name="author" content="Vital Claire">
+    <meta name="owner" content="Vital Claire">
+
+    <meta name="url" content="https://vitalclaire.netlify.app">
+    <meta name="identifier-URL" content="https://vitalclaire.netlify.app">
+    <link rel="canonical" href="https://vitalclaire.netlify.app" />
+
+    <meta name="subject" content="undefined">
+    <meta name="description" content="Portfolio de Vital Claire, étudiante à MMI Bordeaux" />
+
+    <meta property="og:title" content="Portfolio Vital Claire" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Portfolio de Vital Claire, étudiante à MMI Bordeaux" />
+    <meta property="og:site_name" content="Portfolio Vital Claire" />
+    <meta property="og:url" content="https://vitalclaire.netlify.app" />
+    <meta property="og:locale" content="fr" />
+    <meta property="og:image" content="https://vitalclaire.netlify.app/Portrait-Vital-Claire.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vitalclaire.netlify.app">
+    <meta name="twitter:title" content="Portfolio Vital Claire - Portfolio Vital Claire" />
+    <meta name="twitter:description" content="Portfolio de Vital Claire, étudiante à MMI Bordeaux" />
+    <meta name="twitter:image" content="https://vitalclaire.netlify.app/Portrait-Vital-Claire.jpg" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Portfolio Vital Claire" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animationbienvenue.css">
+    <link rel="stylesheet" href="css/animationTitre.css">
+    <link rel="stylesheet" href="css/imageAnimation.css">
+    <link rel="icon" type="image/x-icon" href="Logorouge.png">
+
+
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+
+
+<body>
+    <!-- Inclu le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2 style="color: black;">Projets de communication</h2>
+
+
+    <div class="textpresentation name-anim">
+        <p id="page-name">Au cours de mes trois années d'études, j'ai eu l'opportunité de mener plusieurs projets de
+            communication, alliant stratégie, créativité et gestion de projet. Ces expériences m'ont permis de
+            développer des compétences essentielles en conception de supports, rédaction, communication numérique et
+            événementielle.</p>
+    </div>
+
+    <!--Gallery de projet-->
+    <div class="groupcontent">
+
+        <!--Chaque projet se trouve dans une div de class "content"-->
+
+        <div class="content">
+            <img src="Image/Inté3a/carte.JPEG" alt="Image de couverture du projet d'intégration en 3ème année">
+            <div class="overlay">
+                <a class="sthover" href="inte3a.html">
+
+                    <div class="ProjectNameAndDate">
+                        <div>Les trésors cachés</div>
+                        <div>2024</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="content">
+            <img src="Image/stageMA/Logo MA.png" alt="Image de couverture du projet Stage à Michard Ardillier">
+            <div class="overlay">
+                <a class="sthover" href="stageMA.html">
+
+                    <div class="ProjectNameAndDate">
+                        <div>Stage en communication</div>
+                        <div>2024</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/etellio/Logo.png" alt="Image de couverture du projet Etellio">
+            <div class="overlay">
+                <a class="sthover" href="etellio.html">
+
+                    <div class="ProjectNameAndDate">
+                        <div>Etellio</div>
+                        <div>2024</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/Strattrabuc/Couv strat de com.png"
+                alt="Image de couverture du projet Strat de communuication">
+            <div class="overlay">
+                <a class="sthover" href="strattrabuc.html">
+
+                    <div class="ProjectNameAndDate">
+                        <div>Strat de communication</div>
+                        <div>2024</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/Narationinteractive/img1 (1).webp" alt="Image de couverture du projet Naration intéractive">
+            <div class="overlay">
+                <a class="sthover" href="narrationinteractive.html">
+
+                    <div class="ProjectNameAndDate">
+                        <div>Narration intéractive</div>
+                        <div>2024</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <img src="Image/ptitesaison/saisoncouv.webp" alt="Image de couverture du projet La p'tite saison">
+            <div class="overlay">
+                <a class="sthover" href="ptitesaison.html">
+                    <div class="ProjectNameAndDate">
+                        <div>la p'tite saison</div>
+                        <div>2023</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/wibo/wibocouv.webp" alt="Image de couverture du projet Les histoires de Wibo">
+            <div class="overlay">
+                <a class="sthover" href="wibo.html">
+                    <div class="ProjectNameAndDate">
+                        <div>les histoires de wibo</div>
+                        <div>2023</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/showtime/showcouv.webp" alt="Image de couverture du projet Showtime">
+            <div class="overlay">
+                <a class="sthover" href="showtime.html">
+                    <div class="ProjectNameAndDate">
+                        <div>showtime</div>
+                        <div>2023</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/comchef/comchefcouv.webp" alt="Image de couverture du projet Com d'un chef">
+            <div class="overlay">
+                <a class="sthover" href="comdunchef.html">
+                    <div class="ProjectNameAndDate">
+                        <div>com' d'un chef</div>
+                        <div>2022</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="Image/reboot/10h00-11h15 - Copie.webp" alt="Image de couverture du projet Reboot">
+            <div class="overlay">
+                <a class="sthover" href="reboot.html">
+                    <div class="ProjectNameAndDate">
+                        <div>Reboot!</div>
+                        <div>2022 & 2023</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!--Lien vers les Mentions légales du site-->
+
+    <p><a href="mention.html"
+            style="display: flex; justify-content: end; margin: 5%;text-decoration: underline;">Mentions Légales</a></p>
+
+</body>
+
+
+
+</html>
