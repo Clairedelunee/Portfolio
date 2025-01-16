@@ -3,6 +3,40 @@
 
   }
 
+  /* Style de base du dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style du contenu du menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    margin-top: 5px;
+}
+
+/* Liens à l'intérieur du menu */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Affichage du menu au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Effet au survol des liens */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
   /* Paramètre du nom du site au millieu de la barre de navigation */
   .name {
@@ -38,6 +72,7 @@
   /* Paramètre des menus de la barre de navigation */
   .navelement {
       margin-right: 20px;
+      margin-left: 50px;
   }
 
   .nav-link {
