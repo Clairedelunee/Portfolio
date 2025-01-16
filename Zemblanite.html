@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="Logorouge.png">
+
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclu le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2>Zemblanité</h2>
+
+    <div class="textpresentation2">
+        <div class="name-anim">
+            <p id="page-name" style=" margin-top: 5%; margin-bottom: 10%;">
+                <span class="highlight">Une histoire sur les conséquences des actions humaines</span> <br>
+                Le développement de notre jeu s'est construit autour d'une contrainte centrale : l'impact de l'homme sur
+                l'environnement. À partir de cette thématique, nous avons organisé des sessions de brainstorming pour
+                définir la narration et les fonctionnalités clés du jeu. Ainsi nous avons réfléchi à la mauvaise fin
+                principale du jeu pour mettre en avant les conséquences néfastes des actions humaines. La bonne fin est
+                quant à elle assez philosophique. Elle part du postulat que si chaque personne prenait conscience de
+                l’urgence climatique et faisait un effort, la Terre pourrait être sauvée.
+                J'ai participé à la création des énigmes et l'histoire du jeu, j'ai pu aussi aidé l'équipe création sur
+                la réalisé de certaines fin du jeu.
+                <br>
+                <br>
+                Pitch :
+                <br>
+                <span class="highlight"> Sans vous, la Terre est condamnée. Avec vous… Elle l'est aussi.</span>
+                <br>
+                5 minutes avant l’apocalypse
+                Dans un futur proche, le monde est au bord de l’apocalypse. Vous incarnez un personnage chargé de
+                résoudre des énigmes pour sauver la planète. Vous aurez à votre disposition une console et des écrans
+                affichant en direct les conséquences de vos actions sur le monde. Attention, chaque erreur pourrait
+                entraîner la destruction de la Terre, vous poussant à recommencer cette fois armé de nouvelles
+                connaissances. La logique et la persévérance seront vos alliées pour éviter la catastrophe. Trouvez la
+                bonne combinaison d’actions avant qu’il ne soit trop tard pour sauver la Terre.
+                <br>
+                <br> Pour retrouver le jeu :
+                <a class="link" target="_blank" href="https://amelieperrot.itch.io/zemblanite">
+                    Page Itch.io de notre jeu</a>
+            </p>
+        </div>
+
+
+    </div>
+    <div class="photo-illustration">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/zemblanite/extrait.png"
+            alt="Image extraite du jeu">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/zemblanite/extrait1.png"
+            alt="Image extraite du jeu">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/zemblanite/extrait2.png"
+            alt="Image extraite du jeu">
+            <img style="width: 48%; height: auto; margin: 1%;" src="Image/zemblanite/extrait3.png"
+            alt="Image extraite du jeu">
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="Logorouge.png">
+
+
+    <title>Portfolio Vital Claire</title>
+</head>
+
+<body>
+    <!-- Inclu le header -->
+    <div id="header-container"></div>
+    <script>
+        // Charger le contenu du header depuis le fichier header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            });
+    </script>
+
+    <!-- Reste du contenu de la page -->
+    <h2>Koti'fight</h2>
+
+    <div class="textpresentation">
+        <div class="name-anim">
+            <p id="page-name" style=" margin-top: 10%; margin-bottom: 10%;">
+                Texte qui présente
+                <br>
+                <span class="highlight"> <a style="color:  #6F1D1B;" href="Image/Kotifight/Koti'Prez.pdf"
+                        target="_blank">Ouvrir le PDF de notre présentation</a></span>
+            </p>
+        </div>
+        <!--Insertion de la vidéo youtube-->
+        <div class="video-container">
+            <!-- Insérez le code d'intégration ici -->
+            <iframe width="560" height="315" src="LIEN DE LA VIDéO" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+
+    </div>
+    <div class="photo-illustration">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+        <img style="width: 48%; height: auto; margin: 1%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+        <img style="width: 48%; height: auto;margin: 1% 1% 1% 0%;" src="Image/NOM DU PROJET/NOM DE L'IMAGE"
+            alt="Image extraite de la vidéo">
+
+
+    </div>
+
+
+</body>
+
+</html>
