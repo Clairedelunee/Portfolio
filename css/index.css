@@ -2,13 +2,6 @@
       overflow-x: unset;
   }
 
-  /* Change les couleurs si mode sombre */
-  @media (prefers-color-scheme: dark) {
-      body {
-          background-color: black;
-          color: white;
-      }
-  }
 
  /* Style du bouton de changement de mode en mode clair */
 #toggle-theme {
