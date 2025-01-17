@@ -19,10 +19,25 @@ h1 {
   text-transform: uppercase;
 
 }
+/* Transition fluide entre les thèmes */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+} 
 
 /* Mode sombre : changer la couleur de l'animation */
 body.dark-mode h1{
   color:  #D85A4D;  /* Couleur en mode sombre */
+}
+
+body.dark-mode .btn-cv {
+  background-color: #D85A4D;
+}
+
+
+
+body.dark-mode .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
 }
 
 
