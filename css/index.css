@@ -1,380 +1,279 @@
-  body {
-      overflow-x: unset;
-  }
+/* ============ GLOBAL ============ */
+body {
+    overflow-x: unset;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+a {
+    color: #6F1D1B;
+    text-decoration: none;
+    font-size: 18px;
+}
 
- /* Style du bouton de changement de mode en mode clair */
+/* ============ BOUTON CHANGEMENT DE MODE ============ */
 #toggle-theme {
-    background-color: #6F1D1B;  /* Fond rouge foncé en mode clair */
-    color: white; 
+    background-color: #6F1D1B;
+    color: white;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;  /* Curseur en forme de main */
-    font-size: 16px; 
-    transition: background-color 0.3s, color 0.3s;  /* Transition douce */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
 }
 
-/* Mode sombre : changement de couleur du bouton */
 body.dark-mode #toggle-theme {
-    background-color: #D85A4D;  /* Fond rouge plus clair en mode sombre */
-    color: white;  /* Texte en blanc */
+    background-color: #D85A4D;
 }
 
-  /* Style de base du dropdown */
-  .dropdown {
-      position: relative;
-      display: inline-block;
-  }
+/* ============ DROPDOWN MENU ============ */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-  /* Style du contenu du menu déroulant */
-  .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #ffffff;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      z-index: 100;
-      margin-top: 1px;
-  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    margin-top: 1px;
+}
 
-  /* Liens à l'intérieur du menu */
-  .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-  }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
 
-  /* Affichage du menu au survol */
-  .dropdown:hover .dropdown-content {
-      display: block;
-  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-  /* Effet au survol des liens */
-  .dropdown-content a:hover {
-      background-color: #f1f1f1;
-  }
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
-  /* Paramètre du nom du site au millieu de la barre de navigation */
-  .name {
-      max-width: 100%;
-      margin-left: 12%;
-      margin-right: auto;
-      padding-bottom: 0px;
-      padding-top: 0px;
+/* ============ NAVIGATION ============ */
+nav {
+    margin: 0 20px;
+}
 
-  }
+.navelement {
+    margin: 0 20px;
+}
 
-  /* Paramètre du bouton dans contact */
-  .btn-cv {
-      background-color: #6F1D1B;
-      border-radius: 20px;
-      border: none;
-      padding: 15px;
-  }
+.nav-link {
+    display: inline-block;
+    position: relative;
+}
 
-  /* Paramètre des liens dans la barre de navigation */
-  a {
-      color: black;
-      text-decoration: none;
-      font-size: 18px;
-  }
-
-  nav {
-
-      margin-left: 20px;
-      margin-right: 20px;
-  }
-
-  /* Paramètre des menus de la barre de navigation */
-  .navelement {
-      margin-right: 20px;
-      margin-left: 50px;
-  }
-
-  .nav-link {
-      display: inline-block;
-      position: relative;
-  }
-
-  .nav-link::before {
-      transition: 300ms;
-      height: 2px;
-      content: "";
-      position: absolute;
-      background-color: #6F1D1B;
-  }
-
-
-  /* Mode sombre : changer la couleur de l'animation */
-body.dark-mode .nav-link::before {
+.nav-link::before {
     transition: 300ms;
     height: 2px;
     content: "";
     position: absolute;
+    background-color: #6F1D1B;
+    width: 0;
+    bottom: -1px;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+body.dark-mode .nav-link::before {
     background-color: #D85A4D;
 }
-  .nav-link-ltr::before {
-      width: 0%;
-      bottom: -1px;
-  }
 
-  .nav-link-ltr:hover::before {
-      width: 100%;
-  }
+/* ============ HEADER ============ */
+.headerandtitle {
+    align-items: center;
+    height: 120px;
+    padding: 0 3%;
+    position: relative;
+    display: flex;
+}
 
+.headercontent {
+    text-transform: uppercase;
+    text-align: left;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.name {
+    max-width: 100%;
+    margin-left: 12%;
+    margin-right: auto;
+    padding-bottom: 0px;
+    padding-top: 0px;
 
-
-
-
-  /* Paramètre des textes des menus de la barre de navigation */
-  .headercontent {
-      text-transform: uppercase;
-      text-align: left;
-      width: 30%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-  }
-
-  /* Paramètre de la barre de navigation en entier */
-  .headerandtitle {
-      align-items: center;
-      height: 120px;
-      padding-bottom: 0px;
-      padding-left: 3%;
-      padding-right: 3%;
-      padding-top: 0px;
-      position: relative;
-      display: flex;
-  }
-
-  @media screen and (max-width: 440px) {
-      .headerandtitle {
-
-          padding-bottom: 0px;
-          padding-left: 3%;
-          padding-right: 3%;
-          padding-top: 0px;
-          position: relative;
-          display: flex;
-          flex-direction: column-reverse;
-          margin-bottom: 5%;
-      }
-
-      .name {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin-bottom: 5%;
-          margin-left: 0;
-          margin-right: 0;
-      }
-
-      .navelement {
-          margin-right: 5%;
-          margin-left: 5%;
-      }
-
-      .headercontent {
-          text-align: center;
-          width: 100%;
-          justify-content: center;
-      }
-  }
-
-  @media screen and (max-width: 335px) {
-
-      .navelement {
-          margin-right: 5%;
-          margin-left: 0%;
-
-      }
-  }
-
-  .textpresentation {
-      margin-left: 26%;
-      margin-right: 26%;
-  }
-
-  @media screen and (max-width: 650px) {
-      .textpresentation {
-          margin-left: 10%;
-          margin-right: 10%;
-      }
-
-      .name {
-          margin-left: 2.5%;
-      }
-  }
+}
 
 
-  /* Groupe de tous les projets sur la page index*/
-  .groupcontent {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
-  }
+.btn-cv {
+    background-color: #6F1D1B;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+}
 
+/* ============ RESPONSIVE ============ */
+@media screen and (max-width: 650px) {
+    .textpresentation {
+        margin: 0 10%;
+    }
 
+    .name {
+        margin-left: 2.5%;
+    }
+}
 
-  .content img {
-      border-radius: 20px;
-      border-width: 1px;
-      border-color: black;
-      border-style: solid;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 1;
+@media screen and (max-width: 440px) {
+    .headerandtitle {
+        flex-direction: column-reverse;
+        margin-bottom: 5%;
+    }
 
-  }
+    .name {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
 
-  .content {
-      position: relative;
-      margin-top: 8%;
-      margin-bottom: 8%;
-      width: 300px;
-      margin-left: 2%;
-      margin-right: 2%;
-      max-height: 600px;
-      transition: filter 0.2s ease;
-  }
+    .navelement {
+        margin: 0 5%;
+    }
 
-  /* Ajouter un effet flou au survol*/
-  .content:hover img {
-      filter: blur(2px);
-  }
+    .headercontent {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+}
 
-  /* Affichage gallery de la page index */
-  .galleryindex {
-      display: flex;
-      width: 100%;
-      margin: 20px auto;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
+@media screen and (max-width: 335px) {
+    .navelement {
+        margin-left: 0;
+    }
+}
 
-  /* Paramètre d'image de la gallery de la page index */
-  .galleryindex img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      /* Afficher l'image entière sans déformation */
-      border-radius: 50px;
-      margin-top: 8%;
-      margin-bottom: 8%;
-      margin-left: 2%;
-      margin-right: 2%;
-  }
+/* ============ GALLERIES & IMAGES ============ */
 
-  /* Paramètre de survol pour la page index */
-  .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 102%;
-      height: 108%;
-      background-color: rgba(255, 255, 255, 0);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background-color 0.3s ease;
-      opacity: 0;
-  }
+/* Paramètre de l'affichage du texte en survol dans la page index : permet de mettre sur 2 lignes */
+.ProjectNameAndDate {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+} 
+.galleryindex, .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+}
 
-  .overlay:hover {
-      background-color: rgba(255, 255, 255, 0.7);
-      opacity: 1;
-  }
+.galleryindex img, .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 8% 2%;
+}
+
+.content {
+    position: relative;
+    margin: 8% 2%;
+    width: 300px;
+    max-height: 600px;
+    transition: filter 0.2s ease;
+}
+
+.content img {
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content:hover img {
+    filter: blur(2px);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 108%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+}
+
+.overlay:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+
 
   /* Paramètre de texte au survol des images page index */
   .overlay p {
-      color: black;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      transform: translateY(-50%);
-  }
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(-50%);
+}
 
-  /* Paramètre de lien au survol des images page index */
-  .overlay a {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-  }
+/* Paramètre de lien au survol des images page index */
+.overlay a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* ============ AUTRES ELEMENTS ============ */
+.textpresentation {
+    margin: 0 26%;
+}
 
-  /* Paramètre de l'affichage du texte en survol dans la page index : permet de mettre sur 2 lignes */
-  .ProjectNameAndDate {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      flex-direction: column;
-  }
+.groupcontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-  /* Paramètre de tous les liens */
-  .link {
-      color: #6F1D1B !important;
-      text-decoration: underline !important;
-      text-align: center;
-  }
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin: 0 auto 5%;
+}
 
-  /* Paramètre d'image dans les pages projets */
-  .photo-illustration {
-      display: flex;
-      flex-wrap: wrap;
-  }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-
-  /* Paramètre de l'affichage des vidéo dans les pages projets */
-  .video-container {
-      position: relative;
-      overflow: hidden;
-      padding-bottom: 56.25%;
-      /* Ratio 16:9 pour une vidéo responsive */
-      margin: 0 auto;
-      /* Centrer la vidéo */
-      margin-bottom: 5%;
-  }
-
-  .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
-
-
-  /* Paramètre des deux derniers éléments de la page index */
-  .gallery {
-      display: grid;
-      align-items: center;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
-      max-width: 1000px;
-      margin: 20px auto;
-  }
-
-  .gallery img {
-      width: 100%;
-      border: 2px solid #6F1D1B;
-      /*height: 200px; /* Ajuster cette hauteur en fonction de vos préférences */
-      border-radius: 8px;
-      object-fit: contain;
-      /* Afficher l'image entière sans déformation */
-  }
-
-  /* Paramètre de surlignage de certains éléments */
-  .highlight {
-      color: #6F1D1B;
-      font-weight: 600;
-  }
+.highlight {
+    color: #6F1D1B;
+    font-weight: 600;
+}

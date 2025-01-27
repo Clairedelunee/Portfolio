@@ -1,69 +1,51 @@
-/* Paramètres de la police d'écriture choisi*/
-h1,
-h2,
-h3,
-p,
-.btn,
-a,
-.sthover {
+/* ====== Police d'écriture ====== */
+h1, h2, h3, p, .btn, a, .sthover {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Paramètres des titres 1*/
-h1 {
-  color: #6F1D1B;
-  font-weight: 600;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-
-}
-/* Transition fluide entre les thèmes */
+/* ====== Mode Clair (par défaut) ====== */
 body {
+  color: black;
+  background-color: white;
   transition: background-color 0.5s ease, color 0.5s ease;
-} 
-
-/* Mode sombre : changer la couleur de l'animation */
-body.dark-mode h1, span{
-  color:  #D85A4D !important;  /* Couleur en mode sombre */
 }
 
-body.dark-mode .btn-cv {
-  background-color: #D85A4D;
+/* Titres */
+h1{
+  color: #6F1D1B;
+  text-transform: uppercase;
 }
-
-
-
-body.dark-mode .overlay:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 1;
+h1 {
+  font-size: 28px;
+  font-weight: 700;
 }
-
-
-/* Paramètres des titres 2*/
 h2 {
   font-size: 35px;
-  font-style: normal;
   font-weight: 600;
   line-height: 42px;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  margin: 0 0 20px;
   text-align: center;
   text-transform: none;
 }
 
-/* Paramètres des textes*/
-p {
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  margin-right: 2%;
-  margin-left: 2%;
-  text-transform: none;
+
+/* Mode sombre */
+body.dark-mode h2 {
+  color: #D85A4D; /* Couleur en mode sombre */
+}
+h2 span {
+  color: #6F1D1B;
+}
+
+/* Mode sombre */
+body.dark-mode h2 span {
+  color: #D85A4D;
+}
+
+
+h3 {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /* Paramètres des sous-titres de la gallery dans index */
@@ -71,15 +53,9 @@ p {
   text-transform: uppercase;
   font-weight: bold;
 }
-
-
-/* Met en gras le texte dans la barre du menu de la page qui correspond à celle où se trouve l'utilisateur*/
-.portfolioactif {
-  color: #1C1C1C;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+ a .sthover{
+  color: black !important;
+ }
 
 /* Met en gras l'autre texte dans la barre du menu de la page qui correspond à celle où se trouve l'utilisateur*/
 .contactactive {
@@ -88,78 +64,98 @@ p {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* Par défaut (mode clair) */
-body {
-  color: black;  /* Texte en noir par défaut */
-  background-color: white;  /* Fond blanc */
+
+/* Texte */
+p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 2%;
 }
 
-/* Mode sombre (si la classe dark-mode est appliquée au body) */
-body.dark-mode {
-  color: white;  /* Texte en blanc en mode sombre */
-  background-color: black;  /* Fond noir */
-}
-
-/* Spécifique pour h2, h3, p, .btn */
-h2, h3, p, .btn {
-  color: black;  /* Texte en noir dans le mode clair */
-}
-
-/* Mode sombre */
-body.dark-mode h2, 
-body.dark-mode h3, 
-body.dark-mode p, 
-body.dark-mode .btn {
-  color: white !important;  /* Texte en blanc en mode sombre (avec !important pour forcer la priorité) */
-}
-
-/* Bouton : Style par défaut (mode clair) */
-.btn {
-  background-color: lightgray;  /* Bouton clair */
-  color: black;
-  border: 1px solid gray;      /* Bordure du bouton */
-}
-
-/* Mode sombre : style du bouton */
-body.dark-mode .btn {
-  background-color: gray;      /* Bouton sombre */
-  color: white;
-  border: 1px solid white;     /* Bordure du bouton */
-}
-
-/* Lien : Style par défaut (mode clair) */
+/* Lien */
 a {
-  color: #6F1D1B;  /* Couleur des liens en mode clair */
+  color: #6F1D1B;
   text-decoration: none;
 }
 
-/* Mode sombre : style du lien */
-body.dark-mode a {
-  color: #D85A4D !important;  /* Couleur des liens en mode sombre */
+/* Bouton */
+.btn {
+  background-color: lightgray;
+  color: black;
+  border: 1px solid gray;
 }
 
-/* Spécifique aux titres (h2, h3) */
-h2, h3 {
-  font-size: 2em;  /* Ajuste la taille selon ton design */
-  font-weight: bold;
-}
-
-/* Mode sombre : style des titres h2, h3 */
-body.dark-mode h2, 
-body.dark-mode h3 {
-  color: white !important;  /* Couleur blanche pour les titres en mode sombre (avec !important) */
-}
-
-/* Menu déroulant : couleur de fond (mode clair) */
+/* Menu déroulant */
 .dropdown-content {
-  background-color: white;  /* Fond blanc en mode clair */
-  color: black;  /* Texte noir */
+  background-color: white;
+  color: black;
 }
 
-/* Mode sombre : couleur de fond du menu déroulant */
+/* ====== Mode Sombre ====== */
+body.dark-mode {
+  color: white;
+  background-color: black;
+}
+
+body.dark-mode .btn-cv a{
+  color: white !important;
+}
+body.dark-mode .btn-cv {
+  background-color: #D85A4D;
+} 
+/* Titres et Texte */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .btn,
+body.dark-mode a {
+  color: #D85A4D !important;
+}
+body.dark-mode p {
+  color: white;
+}
+body.dark-mode .highlight {
+  color: #D85A4D;
+}
+/* Spécifique aux animations */
+body.dark-mode h2 span::after {
+  background: #D85A4D;
+}
+
+/* Menu déroulant */
 body.dark-mode .dropdown-content {
-  background-color: white;  /* Fond blanc en mode sombre */
-  color: black;  /* Texte noir */
+  background-color: white;
+  color: black;
+}
+
+/* Bouton */
+body.dark-mode .btn {
+  background-color: gray;
+  border: 1px solid white;
+}
+
+/* Bouton de changement de mode */
+#toggle-theme {
+  background-color: #6F1D1B;
+  color: white;
+}
+body.dark-mode #toggle-theme {
+  background-color: #D85A4D;
+}
+
+/* Élément actif dans le menu */
+.portfolioactif,
+.contactactive {
+  color: #1C1C1C;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Mode sombre : changement des couleurs spécifiques */
+body.dark-mode .portfolioactif,
+body.dark-mode .contactactive {
+  color: white;
 }
 
 /* Transition douce pour un changement fluide */
