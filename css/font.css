@@ -25,8 +25,8 @@ body {
 } 
 
 /* Mode sombre : changer la couleur de l'animation */
-body.dark-mode h1{
-  color:  #D85A4D;  /* Couleur en mode sombre */
+body.dark-mode h1, span{
+  color:  #D85A4D !important;  /* Couleur en mode sombre */
 }
 
 body.dark-mode .btn-cv {
@@ -135,7 +135,7 @@ a {
 
 /* Mode sombre : style du lien */
 body.dark-mode a {
-  color: #D85A4D;  /* Couleur des liens en mode sombre */
+  color: #D85A4D !important;  /* Couleur des liens en mode sombre */
 }
 
 /* Spécifique aux titres (h2, h3) */
