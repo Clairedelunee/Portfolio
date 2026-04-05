@@ -5,8 +5,8 @@ h1, h2, h3, p, .btn, a, .sthover {
 
 /* ====== Mode Clair (par défaut) ====== */
 body {
-  color: black;
-  background-color: white;
+  color: #121212;
+  background-color: #f9fafb;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -31,7 +31,7 @@ h2 {
 
 /* Mode sombre */
 body.dark-mode h2 {
-  color: #f77c93; /* Couleur en mode sombre */
+  color: #a78bfa; /* Couleur en mode sombre */
 }
 h2 span {
   color: #6F1D1B;
@@ -39,7 +39,7 @@ h2 span {
 
 /* Mode sombre */
 body.dark-mode h2 span {
-  color: #f77c93;
+  color: #a78bfa;
 }
 
 
@@ -54,7 +54,7 @@ h3 {
   font-weight: bold;
 }
  a .sthover{
-  color: black !important;
+  color: #121212 !important;
  }
 
 /* Met en gras l'autre texte dans la barre du menu de la page qui correspond à celle où se trouve l'utilisateur*/
@@ -82,27 +82,27 @@ a {
 /* Bouton */
 .btn {
   background-color: lightgray;
-  color: black;
+  color: #121212;
   border: 1px solid gray;
 }
 
 /* Menu déroulant */
 .dropdown-content {
-  background-color: white;
-  color: black;
+  background-color: #f9fafb;
+  color: #121212;
 }
 
 /* ====== Mode Sombre ====== */
 body.dark-mode {
-  color: white;
-  background-color: black;
+  color: #f9fafb;
+  background-color: #121212;
 }
 
 body.dark-mode .btn-cv a{
-  color: white !important;
+  color: #f9fafb !important;
 }
 body.dark-mode .btn-cv {
-  background-color: #f77c93;
+  background-color: #a78bfa;
 } 
 /* Titres et Texte */
 body.dark-mode h1,
@@ -110,38 +110,38 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode .btn,
 body.dark-mode a {
-  color: #f77c93 !important;
+  color: #a78bfa !important;
 }
 body.dark-mode p {
-  color: white;
+  color: #f9fafb;
 }
 body.dark-mode .highlight {
-  color: #f77c93;
+  color: #a78bfa;
 }
 /* Spécifique aux animations */
 body.dark-mode h2 span::after {
-  background: #f77c93;
+  background: #a78bfa;
 }
 
 /* Menu déroulant */
 body.dark-mode .dropdown-content {
-  background-color: white;
-  color: black;
+  background-color: #f9fafb;
+  color: #121212;
 }
 
 /* Bouton */
 body.dark-mode .btn {
   background-color: gray;
-  border: 1px solid white;
+  border: 1px solid #f9fafb;
 }
 
 /* Bouton de changement de mode */
 #toggle-theme {
   background-color: #6F1D1B;
-  color: white;
+  color: #f9fafb;
 }
 body.dark-mode #toggle-theme {
-  background-color: #f77c93;
+  background-color: #a78bfa;
 }
 
 /* Élément actif dans le menu */
@@ -155,7 +155,7 @@ body.dark-mode #toggle-theme {
 /* Mode sombre : changement des couleurs spécifiques */
 body.dark-mode .portfolioactif,
 body.dark-mode .contactactive {
-  color: white;
+  color: #f9fafb;
 }
 
 /* Transition douce pour un changement fluide */
