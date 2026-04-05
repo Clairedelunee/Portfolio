@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Pages principales -->
+  <url>
+    <loc>https://vitalclaire.netlify.app/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://vitalclaire.netlify.app/contact</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sections principales -->
+  <url>
+    <loc>https://vitalclaire.netlify.app/index-com</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vitalclaire.netlify.app/index-crea</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vitalclaire.netlify.app/index-dev</loc>
+    <lastmod>2026-04-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Projet COM -->
+  <url><loc>https://vitalclaire.netlify.app/projetcom/kotifight</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcom/zemblanite</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/inte3a</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcom/stagema</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/etellio</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcom/strattrabuc</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcom/narrationinteractive</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/ptitesaison</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcom/wibo</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/showtime</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcom/comdunchef</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcom/reboot</loc><lastmod>2026-04-05</lastmod></url>
+
+  <!-- Projet CREA -->
+  <url><loc>https://vitalclaire.netlify.app/projetcrea/datajournalisme</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcrea/breakout</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcrea/lsf</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetcrea/infographie</loc><lastmod>2026-04-05</lastmod></url>
+
+  <!-- Projet DEV -->
+  <url><loc>https://vitalclaire.netlify.app/projetdev/easynscel</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetdev/sitericochet</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetdev/blogart</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetdev/handiplay</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetdev/rubyonrails</loc><lastmod>2026-04-05</lastmod></url>
+  <url><loc>https://vitalclaire.netlify.app/projetdev/refontmusee</loc><lastmod>2026-04-05</lastmod></url>
+
+</urlset>
