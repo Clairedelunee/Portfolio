@@ -125,13 +125,13 @@ body.dark-mode h2 span::after {
 
 /* Menu déroulant */
 body.dark-mode .dropdown-content {
-  background-color: #f9fafb;
-  color: #121212;
+  background-color: #121212;
+  color: #f9fafb;
 }
 
 /* Bouton */
 body.dark-mode .btn {
-  background-color: gray;
+  background-color: #121212;
   border: 1px solid #f9fafb;
 }
 
