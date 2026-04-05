@@ -31,7 +31,7 @@ h2 {
 
 /* Mode sombre */
 body.dark-mode h2 {
-  color: #D85A4D; /* Couleur en mode sombre */
+  color: #f77c93; /* Couleur en mode sombre */
 }
 h2 span {
   color: #6F1D1B;
@@ -39,7 +39,7 @@ h2 span {
 
 /* Mode sombre */
 body.dark-mode h2 span {
-  color: #D85A4D;
+  color: #f77c93;
 }
 
 
@@ -102,7 +102,7 @@ body.dark-mode .btn-cv a{
   color: white !important;
 }
 body.dark-mode .btn-cv {
-  background-color: #D85A4D;
+  background-color: #f77c93;
 } 
 /* Titres et Texte */
 body.dark-mode h1,
@@ -110,17 +110,17 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode .btn,
 body.dark-mode a {
-  color: #D85A4D !important;
+  color: #f77c93 !important;
 }
 body.dark-mode p {
   color: white;
 }
 body.dark-mode .highlight {
-  color: #D85A4D;
+  color: #f77c93;
 }
 /* Spécifique aux animations */
 body.dark-mode h2 span::after {
-  background: #D85A4D;
+  background: #f77c93;
 }
 
 /* Menu déroulant */
@@ -141,7 +141,7 @@ body.dark-mode .btn {
   color: white;
 }
 body.dark-mode #toggle-theme {
-  background-color: #D85A4D;
+  background-color: #f77c93;
 }
 
 /* Élément actif dans le menu */

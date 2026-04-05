@@ -23,7 +23,7 @@ a {
 }
 
 body.dark-mode #toggle-theme {
-    background-color: #D85A4D;
+    background-color: #f77c93;
 }
 
 /* ============ DROPDOWN MENU ============ */
@@ -85,7 +85,7 @@ nav {
 }
 
 body.dark-mode .nav-link::before {
-    background-color: #D85A4D;
+    background-color: #f77c93;
 }
 
 /* ============ HEADER ============ */
