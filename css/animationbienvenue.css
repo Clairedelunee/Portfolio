@@ -39,16 +39,17 @@ h2:nth-child(1) {
 h2:nth-child(2) {
   animation: txt-appearance 0s 0.20s forwards;
 }
-h2:nth-child(1) span::after {
-  background: #6F1D1B;
-  animation: slide-in 0.20s ease-out forwards,
-  slide-out 0.80s 0.20s ease-out forwards;
-}
+
 /* Mode sombre : changer la couleur de l'animation */
 body.dark-mode h2:nth-child(1) span::after {
   background: #a78bfa;  /* Couleur en mode sombre */
 }
-
+/* Animation pour le premier h2 */
+h2:nth-child(1) span::after {
+  background: #6F1D1B;  /* Couleur en mode clair */
+  animation: slide-in 0.20s ease-out forwards,
+             slide-out 0.80s 0.20s ease-out forwards;
+}
 
 @keyframes slide-in {
   100% {
