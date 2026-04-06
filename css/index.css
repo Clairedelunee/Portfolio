@@ -163,10 +163,11 @@ body.dark-mode .nav-link::before {
         padding-right: 0;
         border-bottom: 0;
     }
-
-    .headercontent {
-        justify-content: center;
+    .headercontent{
+        flex-direction: column-reverse;
+        padding-right: 0;
     }
+
 }
 
 @media screen and (max-width: 440px) {
