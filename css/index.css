@@ -161,9 +161,13 @@ body.dark-mode .nav-link::before {
         flex-direction: column-reverse;
         margin-bottom: 5%;
     }
-    nav.{
+    nav{
         display: flex;
         justify-content: center;
+    }
+    h1{
+        display: flex;
+    justify-content: space-around;
     }
 
     .name {
