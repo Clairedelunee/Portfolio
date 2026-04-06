@@ -72,16 +72,16 @@ body.dark-mode #toggle-theme {
 /* ============ NAVIGATION ============ */
 nav {
     position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #f9fafb;
-  border-bottom: 1px solid rgba(111, 29, 27, 0.1);
-  margin-top: 5%;
+    top: 0;
+    z-index: 1000;
+    background-color: #f9fafb;
+    border-bottom: 1px solid rgba(111, 29, 27, 0.1);
+    margin-top: 5%;
 }
 
 body.dark-mode nav {
-  background-color: #121212;
-  border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+    background-color: #121212;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.15);
 }
 
 .navelement {
@@ -125,12 +125,15 @@ body.dark-mode .nav-link::before {
     text-transform: uppercase;
     text-align: left;
     width: 100%;
+    padding-right: 10%;
     display: flex;
     justify-content: space-around;
 }
-.Menu1{
+
+.Menu1 {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .name {
@@ -154,24 +157,37 @@ body.dark-mode .nav-link::before {
     .textpresentation {
         margin: 0 10%;
     }
+
+    nav {
+        margin-top: 5%;
+        padding-right: 0;
+        border-bottom: 0;
+    }
+
+    .headercontent {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 440px) {
     .headerandtitle {
         flex-direction: column-reverse;
+        margin-bottom: 5%;
     }
-    nav{
+
+    nav {
         display: flex;
         justify-content: center;
     }
-    h1{
+
+    h1 {
         display: flex;
-    justify-content: space-around;
+        justify-content: space-around;
     }
 
     .name {
         width: 100%;
-       
+
         margin-bottom: 5%;
     }
 
@@ -203,8 +219,10 @@ body.dark-mode .nav-link::before {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-} 
-.galleryindex, .gallery {
+}
+
+.galleryindex,
+.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -212,7 +230,8 @@ body.dark-mode .nav-link::before {
     margin: 20px auto;
 }
 
-.galleryindex img, .gallery img {
+.galleryindex img,
+.gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -225,7 +244,7 @@ body.dark-mode .nav-link::before {
     margin: 8% 2%;
     width: 300px;
     max-height: 600px;
-   transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .content img {
@@ -242,17 +261,18 @@ body.dark-mode .nav-link::before {
 
 
 .content:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(111, 29, 27, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(111, 29, 27, 0.15);
 }
 
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-width: 100%;
-height: 100%;
-border-radius: 20px; /* même valeur que .content img */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* même valeur que .content img */
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: center;
@@ -267,8 +287,8 @@ border-radius: 20px; /* même valeur que .content img */
 }
 
 
-  /* Paramètre de texte au survol des images page index */
-  .overlay p {
+/* Paramètre de texte au survol des images page index */
+.overlay p {
     color: #121212;
     font-size: 16px;
     font-weight: bold;
@@ -284,6 +304,7 @@ border-radius: 20px; /* même valeur que .content img */
     align-items: center;
     justify-content: space-around;
 }
+
 /* ============ AUTRES ELEMENTS ============ */
 .textpresentation {
     margin: 0 26%;
