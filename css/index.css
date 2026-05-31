@@ -162,7 +162,8 @@ body.dark-mode .nav-link::before {
         padding-right: 0;
         border-bottom: 0;
     }
-    .headercontent{
+
+    .headercontent {
         flex-direction: column-reverse;
         padding-right: 0;
     }
@@ -273,6 +274,7 @@ body.dark-mode .nav-link::before {
     height: 100%;
     border-radius: 20px;
     /* même valeur que .content img */
+    border: 1px solid #121212;
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: center;
